@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/OneMoreByte/static/css/main.eafae48c.css",
+    "main.js": "/OneMoreByte/static/js/main.be357e76.js",
+    "static/media/radish1.png": "/OneMoreByte/static/media/radish1.208d53260e6015ee4de0.png",
+    "static/media/radish3.png": "/OneMoreByte/static/media/radish3.3731026b43cf3aace917.png",
+    "static/media/radish2.jpeg": "/OneMoreByte/static/media/radish2.c9d683a87fc76a8ea02b.jpeg",
+    "static/media/transparent copy.png": "/OneMoreByte/static/media/transparent copy.b79447e70dd87af38c98.png",
+    "static/media/food_waste.jpeg": "/OneMoreByte/static/media/food_waste.09e5a5d4fffdef7c2bd2.jpeg",
+    "static/media/sdg13.png": "/OneMoreByte/static/media/sdg13.77740fbde99c90d71bb7.png",
+    "static/media/sdg3.png": "/OneMoreByte/static/media/sdg3.0a4ae9268802a5c226ce.png",
+    "static/media/sdg2.png": "/OneMoreByte/static/media/sdg2.f8267849acaaa4db4261.png",
+    "index.html": "/OneMoreByte/index.html",
+    "main.eafae48c.css.map": "/OneMoreByte/static/css/main.eafae48c.css.map",
+    "main.be357e76.js.map": "/OneMoreByte/static/js/main.be357e76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eafae48c.css",
+    "static/js/main.be357e76.js"
+  ]
+}
