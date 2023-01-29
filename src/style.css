@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@300;400;900&display=swap');
+.header {
+    padding: 15px;
+    text-align: center;
+    background:white;
+    color: black;
+    font-size: 30px;
+
+  }
+
+  .header img {
+float:left;
+    width: 40px;
+    height: 40px;
+
+  }
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+ /* Add a black background color to the top navigation */
+ .navbar {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+    overflow: hidden;
+   width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    
+    float: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+  } 
+  .navbar p {
+    
+    float: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+  } 
+
+  /*Social Page*/
+  .grid { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+    justify-items: center;
+    }
+  .grid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+  }
+  @keyframes growProgressBar {
+    0%, 33% { --pgPercentage: 0; }
+    100% { --pgPercentage: var(--value); }
+  }
+  
+  @property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  }
+  
+  div[role="progressbar"] {
+ 
+    --size: 12rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: 
+      radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+      conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+      ;
+  
+    font-size: calc(var(--size) / 5);
+    color: var(--fg);
+ 
+  }
+  
+  div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .container1 {
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+
+
+
+#container {
+
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    line-height: 16px;
+    color: #333333;
+    font-size: 14px;
+    background: #ffffff;
+
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.count {
+    line-height: 60px;
+    color: black;
+    margin-left: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* flip card */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: #369;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #FFD580;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+footer {
+  padding: 10px 20px;
+  border-top: 2px solid black;
+  background: white;
+ 
+}
+
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

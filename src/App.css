@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 80vh;
+  padding-top: 20vh;
+
+}
+
+.App h1 {
+  font-size: 150px;
+  font-weight: 100;
+}
+
+.spacer {
+  height: 60px;
+}
+
+.gSign {
+  width: 300px;
+  height: 100px;
+  font-size: 20px;
+  box-shadow: 5px 5px 0 lightgrey;
+  border:none;
+  transition: 0.2s;
+}
+
+.gSign:hover {
+  box-shadow: none;
+  background-color: rgb(223, 222, 222);
+  cursor: pointer;
+  border: solid 3px rgb(173, 173, 173);
+}
+
+
